@@ -1,0 +1,335 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-image: url("imgs/Donation-Background-Image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+/* Makes div resonsive */
+
+.responsive {
+  width: 1400px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+
+
+/* Donation Form */
+
+.donation-form {
+  background-color: #374954;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+
+.donation-form .logo {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.donation-form h2 {
+  color: #fff;
+  padding: 10px 0;
+}
+
+.donation-form h1 {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+.donation-form label {
+  color: #fff;
+  font-size: 16px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: rgb(255, 255, 255);
+  outline-style: solid;
+  outline-width: medium;
+  outline-color: #3E8760;
+  outline-offset: -1px;
+}
+
+.donation-form input {
+  border-radius: 5px;
+  height: 35px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-left: 7px;
+  color: rgb(70, 70, 70);
+}
+
+.donation-form select {
+  padding-left: 5px;
+  color: rgb(70, 70, 70);
+}
+
+.donation-form select {
+  border-radius: 5px;
+  height: 35px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.donation-form #donation-amount {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.donation-form #time {
+  display: block;
+  width: 100%;
+}
+
+.name {
+  display: flex;
+}
+
+#first-name, #last-name {
+  width: 95%;
+}
+
+#last-name, .last-name label {
+  margin-left: 5%;
+}
+
+#address, #address2 {
+  display: block;
+  width: 100%;
+}
+
+.place  {
+  display: flex;
+}
+
+.place div {
+  padding: 0 5px;
+}
+
+#country, #city, #zip-code {
+  width: 100%;
+  display: block;
+}
+
+#email {
+  width: 100%;
+  display: block;
+}
+
+.payment {
+  display: flex;
+}
+
+.payment div {
+  padding: 0 5px;
+}
+
+
+#cvv {
+  width: 100%;
+}
+
+#card-number {
+  width: 100%;
+}
+
+.submit {
+  width: 50%;
+}
+
+.button {
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  .payment {
+    display: flex;
+    flex-direction: column;
+  }
+  .expiration-date select {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .donation-form {
+    border-radius: 0;
+    padding: 5%;
+    margin: 0;
+  }
+  .responsive {
+    padding: 0;
+    max-width: 100%;
+  }
+}
+
+
+
+/* Footer */
+
+.footer {
+  background: #303036;
+  color: #d3d3d3;
+  height: 400px;
+}
+
+.footer .footer-content {
+  height: 350px;
+  display: flex;
+}
+
+.footer .footer-content .footer-section {
+  flex: 1;
+  padding: 25px;
+}
+
+.footer .footer-content h2 {
+  margin-left: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer .footer-section p {
+  padding-bottom: 15px;
+}
+
+.footer .footer-section.links {
+  padding-top: 50px;
+}
+
+.footer  .footer-section.contact {
+  padding-top: 50px;
+}
+
+.footer .footer-content .about .contact span {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+.footer .footer-content .about .socials a {
+  border: 1px solid grey;
+  width: 45px;
+  height: 41px;
+  padding-top: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  border-radius: 5px;
+  color: grey;
+  transition: all 300ms;
+}
+
+.footer .footer-content .about .socials a:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all 300ms;
+}
+
+.footer .footer-content ul a {
+  display: block;
+  margin: 10px;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.footer .footer-section.contact ul li {
+  display: block;
+  margin: 10px;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.footer .footer-bottom {
+  background: #22292e;
+  color: #686868;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  padding-top: 15px;
+}
+
+.footer .footer-content ul a:hover {
+  margin-left: 15px;
+  color: grey;
+}
+
+@media (max-width: 1100px) {
+  .footer-section p {
+    font-size: 15px;
+  }
+  .footer li {
+    font-size: 15px
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer-section p {
+    font-size: 13px;
+  }
+  .footer li {
+    font-size: 13px;
+  }
+  .footer-section.contact *:not(h2) {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    height: 1050px;
+  }
+  .footer {
+    height: 1050px;
+  }
+  .footer-section p {
+    font-size: 17px;
+  }
+  .footer li {
+    font-size: 17px;
+  }
+  .footer-section.contact *:not(h2) {
+    font-size: 17px;
+  }
+}
